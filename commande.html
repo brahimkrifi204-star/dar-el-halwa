@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dar El Halwa - Pâtisserie fine tunisienne</title>
+</head>
+<body>
+     <header>
+        <h1>Dar El Halwa</h1>
+        <p>Pâtisserie fine tunisienne depuis 1900</p>
+
+        <figure>
+            <figcaption>dar el halwa </figcaption>
+            <img src="image/pati.jpg">
+        </figure>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#apropos">À propos</a></li>
+            <li><a href="#produits">Nos produits</a></li>
+            <li><a href="#services">Nos services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="carte.html" >mom carte</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>commander un gateau personnalise</h2>
+        <form action="traittement.php" method="post">
+            <fieldset>
+                <legend>coordonnees</legend>
+                <label>Non:</label><input type="text" name="nom" id="nom"><br>
+                <label>Prenom :</label><input type="text" name="prenom" id="prenom"><br>
+                <label>Adresse electrinique:</label><input type="email" name="email" id="email"  placeholder="vous@exemple.tn"><br>
+                <label>telephone:</label><input type="tel" name="tel" id="tel"><br>
+                 <label>postal:</label><input type="number" name="postal" id="postal"><br>
+                <label>adress de livresion:</label><textarea id="livrison" rows="3" cols="40"></textarea><br>
+                <label>gouverment:</label><select><option>sfax</option><option>tunis</option><option>sousse</option><option>gabes</option><option>autre</option></select><br>
+
+            </fieldset>
+            <fieldset>
+                <legend>votre gateaux</legend>
+                <label>occasion</label><input type="radio" name="oss"><label>anniversaire</label><input type="radio" name="oss"><label>mariage</label><input type="radio" name="oss"><label>fiancaille</label><input type="radio" name="oss"><label>autre</label><input type="radio" name="oss"><br>
+
+                <label>date de retrait</label><input type="date" id="date" name="date" min="2026-09-01" require><br>
+                <label>nombre de pates</label><input type="number" max="100" min="2"><br>
+                <label>parfumes souhaites</label> <input type="checkbox" id="p-choco" name="parfums[]" value="chocolat" checked>
+      <label for="p-choco">Chocolat</label>
+      <input type="checkbox" id="p-vanille" name="parfums[]" value="vanille">
+      <label for="p-vanille">Vanille</label>
+      <input type="checkbox" id="p-pistache" name="parfums[]" value="pistache">
+      <label for="p-pistache">Pistache</label>
+      <input type="checkbox" id="p-fruits" name="parfums[]" value="fruits-rouges">
+      <label for="p-fruits">Fruits rouges</label>
+
+
+            </fieldset>
+
+
+        </form>
+
+    
+    </main>
+<footer>
+        <p>Dar El Halwa - Pâtisserie fine tunisienne - 2026</p>
+        <a href="https://www.facebook.com/darelhalwa"> facebook </a><br>
+        <a href="https://www.instagram.com/darelhalwa">instagram</a><br>
+        <a href="https://www.linkedin.com/company/darelhalwa">link</a>
+    </footer>
+</body>
+
+</html>
