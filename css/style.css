@@ -17,7 +17,7 @@ h2 {
   border-bottom: 2px solid var(--miel);
 }
 
-nav a {
+nav ,a {
   color: var(--chocolat);
   font-weight: bold;
   text-decoration: none;
