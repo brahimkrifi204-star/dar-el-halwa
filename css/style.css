@@ -1,0 +1,97 @@
+h1 { color: red; }
+:root {
+  --miel: #c8912a;
+  --chocolat: #4a2c1a;
+  --creme: #fff8ef;
+  --pistache: #6b8e4e;
+  --gris-texte: #3a3a3a;
+  --espace: 1rem;
+}
+
+body {
+  background-color: var(--creme);
+  color: var(--gris-texte);
+}
+/* Titres h2 */
+h2 {
+  color: var(--chocolat);
+  border-bottom: 2px solid var(--miel);
+}
+
+/* Liens de la navigation */
+nav a {
+  color: var(--chocolat);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Catégories de produits */
+strong {
+  color: var(--miel);
+}
+
+/* Pied de page */
+footer {
+  background-color: var(--chocolat);
+  color: var(--creme);
+  text-align: center;
+}
+
+/* Paragraphes et éléments de liste */
+p, li {
+  line-height: 1.6;
+}
+
+/* Section contact */
+#contact {
+  background-color: #ffffff;
+  padding: var(--espace);
+}
+
+/* Classe mise en avant */
+.mise-en-avant {
+  font-size: larger;
+  font-style: italic;
+}
+
+/* États des liens (Respecter l'ordre L-V-H-A) */
+a:link { color: var(--miel); }
+a:visited { color: var(--pistache); }
+a:hover { color: var(--chocolat); text-decoration: underline; }
+a:active { color: var(--chocolat); }
+.carte-info {
+  width: 400 px;
+  padding: 20 px;
+  border: 2px solid var(--miel);
+  margin: 30 px;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+thead {
+  background-color: var(--miel);
+  color: var(--chocolat);
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+tbody tr td:last-child {
+  text-align: right;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #faf3e8;
+}
+
+caption {
+  caption-side: bottom;
+  font-style: italic;
+}
