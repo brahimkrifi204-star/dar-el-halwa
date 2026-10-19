@@ -7,6 +7,9 @@ h1 { color: red; }
   --gris-texte: #3a3a3a;
   --espace: 1rem;
 }
+* {
+  box-sizing: border-box;
+}
 
 body {
   background-color: var(--creme);
@@ -59,9 +62,6 @@ a:active { color: var(--chocolat); }
   padding: 20 px;
   border: 2px solid var(--miel);
   margin: 30 px;
-}
-*, *::before, *::after {
-  box-sizing: border-box;
 }
 table {
   border-collapse: collapse;
