@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 h1 { color: red; }
 :root {
   --miel: #c8912a;
@@ -148,4 +149,156 @@ footer > div {
 .carte .prix {
   margin-top: auto;
   font-weight: bold;
+=======
+h1 { color: red; }
+:root {
+  --miel: #c8912a;
+  --chocolat: #4a2c1a;
+  --creme: #fff8ef;
+  --pistache: #6b8e4e;
+  --gris-texte: #3a3a3a;
+  --espace: 1rem;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--creme);
+  color: var(--gris-texte);
+}
+h2 {
+  color: var(--chocolat);
+  border-bottom: 2px solid var(--miel);
+}
+
+nav ,a {
+  color: var(--chocolat);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+strong {
+  color: var(--miel);
+}
+
+footer {
+  background-color: var(--chocolat);
+  color: var(--creme);
+  text-align: center;
+}
+
+
+p, li {
+  line-height: 1.6;
+}
+
+
+#contact {
+  background-color: #ffffff;
+  padding: var(--espace);
+}
+
+a:link { color: var(--miel); }
+a:visited { color: var(--pistache); }
+a:hover { color: var(--chocolat); text-decoration: underline; }
+a:active { color: var(--chocolat); }
+.carte-info {
+  width: 400 px;
+  padding: 20 px;
+  border: 2px solid var(--miel);
+  margin: 30 px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+thead {
+  background-color: var(--miel);
+  color: var(--chocolat);
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+tbody tr td:last-child {
+  text-align: right;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #faf3e8;
+}
+
+caption {
+  caption-side: bottom;
+  font-style: italic;
+}
+body {
+  display: grid;
+  grid-template-areas:
+    "entete"
+    "navigation"
+    "contenu"
+    "pied";
+  grid-template-rows: auto auto 1fr auto;
+  min-height: 100vh;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+header { grid-area: entete; }
+nav { grid-area: navigation; }
+main { grid-area: contenu; }
+footer { grid-area: pied; }
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: var(--espace, 1rem);
+  list-style: none;
+  padding: 0;
+}
+
+nav a {
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+footer {
+  display: flex;
+  gap: calc(var(--espace, 1rem) * 2);
+  padding: 1.5rem 0;
+}
+
+footer > div {
+  flex: 1;
+}
+.grille-produits {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+.carte {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.carte .prix {
+  margin-top: auto;
+  font-weight: bold;
+>>>>>>> 9e086631fd325b0ac2560aa998e763de423fed03
 }
